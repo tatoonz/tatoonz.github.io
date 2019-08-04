@@ -1,0 +1,48 @@
+@import "config";
+@import "mixins";
+@import "normalize";
+@import "fonts";
+@import "icon";
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #333333;
+}
+
+a {
+  color: map-get($map: $colors, $key: "link");
+  text-decoration: none;
+
+  &:hover {
+    color: lighten($color: map-get($map: $colors, $key: "link"), $amount: 30%);
+  }
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include breakpoint(large) {
+    max-width: 960px;
+  }
+}

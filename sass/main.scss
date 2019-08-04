@@ -1,6 +1,7 @@
+@import "config";
+@import "mixins";
 @import "normalize";
 @import "icon";
-@import "mixins";
 
 @font-face {
   font-family: 'Open Sans';
@@ -34,12 +35,12 @@ html {
 }
 
 a {
-  color: #333333;
+  color: map-get($map: $colors, $key: "link");
   text-decoration: none;
-}
 
-a:hover {
-  color: #777777;
+  &:hover {
+    color: lighten($color: map-get($map: $colors, $key: "link"), $amount: 30%);
+  }
 }
 
 .container {

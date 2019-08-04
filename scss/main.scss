@@ -4,6 +4,10 @@
   padding-top: 50px;
   display: flex;
   justify-content: space-around;
+
+  & span {
+    @include sr-only;
+  }
 }
 
 #profile img {

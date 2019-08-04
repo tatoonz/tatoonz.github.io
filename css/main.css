@@ -435,7 +435,31 @@ a:hover {
   display: flex;
   justify-content: space-around;
 }
-#profile span {
+#profile h1 {
+  margin-top: 0;
+  color: #007bff;
+}
+#profile img {
+  margin-right: 20px;
+  border-radius: 50%;
+}
+#profile p {
+  line-height: 1.5em;
+  color: #6c757d;
+}
+#profile p strong {
+  font-size: 1.5rem;
+  color: #343a40;
+}
+#profile ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+}
+#profile ul li {
+  padding-right: 20px;
+}
+#profile ul span {
   position: absolute !important;
   width: 1px !important;
   height: 1px !important;
@@ -445,33 +469,6 @@ a:hover {
   clip: rect(0, 0, 0, 0) !important;
   white-space: nowrap !important;
   border: 0 !important;
-}
-
-#profile img {
-  margin-right: 20px;
-  border-radius: 50%;
-}
-
-#profile h1 {
-  margin-top: 0;
-}
-
-#profile p {
-  line-height: 1.5em;
-}
-
-#profile strong {
-  font-size: 1.3em;
-}
-
-#profile ul {
-  list-style: none;
-  padding-left: 0;
-  display: flex;
-}
-
-#profile ul li {
-  padding-right: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -5,34 +5,37 @@
   display: flex;
   justify-content: space-around;
 
-  & span {
-    @include sr-only;
+  & h1 {
+    margin-top: 0;
+    color: $primary;
   }
-}
 
-#profile img {
-  margin-right: 20px;
-  border-radius: 50%;
-}
+  & img {
+    margin-right: 20px;
+    border-radius: 50%;
+  }
 
-#profile h1 {
-  margin-top: 0;
-}
+  & p {
+    line-height: 1.5em;
+    color: $secondary;
 
-#profile p {
-  line-height: 1.5em;
-}
+    & strong {
+      font-size: 1.5rem;
+      color: $dark;
+    }
+  }
 
-#profile strong {
-  font-size: 1.3em;
-}
+  & ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
 
-#profile ul {
-  list-style: none;
-  padding-left: 0;
-  display: flex;
-}
+    & li {
+      padding-right: 20px;
+    }
 
-#profile ul li {
-  padding-right: 20px;
+    & span {
+      @include sr-only;
+    }
+  }
 }

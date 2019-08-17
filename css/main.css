@@ -424,7 +424,7 @@ a:hover {
   margin-right: auto;
   margin-left: auto;
 }
-@media (min-width: 992px) {
+@media (max-width: 992px) {
   .container {
     max-width: 960px;
   }
@@ -435,13 +435,31 @@ a:hover {
   display: flex;
   justify-content: space-around;
 }
-#profile h1 {
-  margin-top: 0;
-  color: #007bff;
+@media (max-width: 576px) {
+  #profile {
+    flex-direction: column;
+    padding-top: 25px;
+  }
 }
 #profile img {
   margin-right: 20px;
   border-radius: 50%;
+}
+@media (max-width: 576px) {
+  #profile img {
+    align-self: center;
+    margin-right: 0;
+  }
+}
+#profile h1 {
+  margin-top: 0;
+  color: #007bff;
+}
+@media (max-width: 576px) {
+  #profile h1 {
+    text-align: center;
+    margin-top: 20px;
+  }
 }
 #profile p {
   line-height: 1.5em;
@@ -456,8 +474,19 @@ a:hover {
   padding-left: 0;
   display: flex;
 }
+@media (max-width: 576px) {
+  #profile ul {
+    flex-direction: column;
+  }
+}
 #profile ul li {
   padding-right: 20px;
+}
+@media (max-width: 576px) {
+  #profile ul li {
+    padding-right: 0;
+    margin-bottom: 10px;
+  }
 }
 #profile ul span {
   position: absolute !important;

@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-around;
 
-  @include breakpoint(sm) {
+  @include breakpoint-max(sm) {
     flex-direction: column;
     padding-top: 25px;
   }
@@ -14,7 +14,7 @@
     margin-right: 20px;
     border-radius: 50%;
 
-    @include breakpoint(sm) {
+    @include breakpoint-max(sm) {
       align-self: center;
       margin-right: 0;
     }
@@ -24,7 +24,7 @@
     margin-top: 0;
     color: $primary;
 
-    @include breakpoint(sm) {
+    @include breakpoint-max(sm) {
       text-align: center;
       margin-top: 20px;
     }
@@ -45,14 +45,14 @@
     padding-left: 0;
     display: flex;
 
-    @include breakpoint(sm) {
+    @include breakpoint-max(sm) {
       flex-direction: column;
     }
 
     li {
       padding-right: 20px;
 
-      @include breakpoint(sm) {
+      @include breakpoint-max(sm) {
         padding-right: 0;
         margin-bottom: 10px;
       }
